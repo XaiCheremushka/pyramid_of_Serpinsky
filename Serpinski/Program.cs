@@ -4,7 +4,7 @@ namespace Serpinski
 {
     class Program
     {
-
+        
         static void Main(string[] args)
         {
 
@@ -17,7 +17,7 @@ namespace Serpinski
             pozition[4] = new double[] { 0.0, 1.0, 0.0 };  // S
             // Координаты вершин
 
-            int size = 0; // количество итераций 
+            int size = 1; // количество итераций 
             int vertice = 0; // Количество вершин 
             // Количество вершин в этой программе
             if (size != 0)
@@ -30,6 +30,8 @@ namespace Serpinski
             //else vertice = 5;
 
             int faces = (int)Math.Pow(5, size+1); // Количество закрашенных полей
+            int edges = 8*(int)Math.Pow(5, size+1);
+
 
             Faces face = new();
 
@@ -42,7 +44,8 @@ namespace Serpinski
                 // кол-во вершин, кол-во граней, кол-во ребер (можно выставить 0)
                 File.AppendAllText(path, vertice.ToString() + " ");
                 File.AppendAllText(path, faces.ToString() + " ");
-                File.AppendAllText(path, "0\n");
+                File.AppendAllText(path, edges.ToString() + "\n");
+
                 // координаты всех точек
                 pirPoz(pozition[0], pozition[1], pozition[2], pozition[3], pozition[4], size, path, face);
                 // грани
@@ -58,16 +61,16 @@ namespace Serpinski
 
         }
 
-        struct Faces
+        class Faces
         {
             public int facesCol = 0; // Счетчик для полей
             public int verticeCol = 0; // Счетчик для вершин
             public string[] faces = new string[10000];
             public Faces()
             {
-                
+
             }
-            public int upFacesCol(int n) 
+            public int upFacesCol(int n)
             {
                 this.facesCol += n;
                 return this.facesCol - n;
@@ -76,7 +79,7 @@ namespace Serpinski
             {
                 this.verticeCol += n;
             }
-            
+
 
         }
 
@@ -93,7 +96,7 @@ namespace Serpinski
             middles[7] = new double[3]; // cs
             middles[8] = new double[3]; // ds
 
-            string[][] middlesForFaces = new string[5][]; // Вершины для полей
+            //string[][] middlesForFaces = new string[5][]; // Вершины для полей
 
 
             if (size != 0)
@@ -142,7 +145,7 @@ namespace Serpinski
                 face.faces[face.upFacesCol(1)] = "3 " + a.ToString() + " " + s.ToString() + " " + b.ToString() + "\n";
                 face.faces[face.upFacesCol(1)] = "3 " + a.ToString() + " " + s.ToString() + " " + d.ToString() + "\n";
                 face.faces[face.upFacesCol(1)] = "3 " + b.ToString() + " " + s.ToString() + " " + c.ToString() + "\n";
-                face.faces[face.upFacesCol(1)] = "3 " + c.ToString() + " " + s.ToString() + " " + b.ToString() + "\n";
+                face.faces[face.upFacesCol(1)] = "3 " + c.ToString() + " " + s.ToString() + " " + d.ToString() + "\n";
 
                 face.upVerticeCol(5); // Увеличиваем счетчик для последующих записей
             }
@@ -150,4 +153,6 @@ namespace Serpinski
 
         }
     }
+
+
 }
