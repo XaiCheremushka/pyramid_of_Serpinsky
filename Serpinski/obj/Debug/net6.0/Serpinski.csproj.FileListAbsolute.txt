@@ -1,0 +1,15 @@
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\bin\Debug\net6.0\Serpinski.exe
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\bin\Debug\net6.0\Serpinski.deps.json
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\bin\Debug\net6.0\Serpinski.runtimeconfig.json
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\bin\Debug\net6.0\Serpinski.dll
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\bin\Debug\net6.0\Serpinski.pdb
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.csproj.AssemblyReference.cache
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.GeneratedMSBuildEditorConfig.editorconfig
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.AssemblyInfoInputs.cache
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.AssemblyInfo.cs
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.csproj.CoreCompileInputs.cache
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.dll
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\refint\Serpinski.dll
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.pdb
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\Serpinski.genruntimeconfig.cache
+F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\obj\Debug\net6.0\ref\Serpinski.dll
