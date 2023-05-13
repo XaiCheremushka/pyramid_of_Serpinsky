@@ -42,12 +42,6 @@ namespace Serpinski
                 // координаты всех точек
                 pirPoz(pozition[0], pozition[1], pozition[2], pozition[3], pozition[4], size, path, face);
                 // грани
-                //for (int i = 0; i < faces; i++)
-                //{
-                //    File.AppendAllText(path, face.faces[i]);
-                //    Console.WriteLine(face.faces[i]);
-                //}
-
                 foreach (string str in face.faces)
                 {
                     File.AppendAllText(path, str);
