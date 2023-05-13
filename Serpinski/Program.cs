@@ -4,7 +4,7 @@ namespace Serpinski
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
 
@@ -17,25 +17,25 @@ namespace Serpinski
             pozition[4] = new double[] { 0.0, 1.0, 0.0 };  // S
             // Координаты вершин
 
-            int size = 1; // количество итераций 
+            int size = 6; // количество итераций 
             int vertice = 0; // Количество вершин 
             // Количество вершин в этой программе
-            if (size != 0)
-                vertice = (int)Math.Pow(5, size);
-            else vertice = 5;
+            vertice = (int)Math.Pow(5, size + 1);
 
             //Фактическое количество вершин 
             //if (size != 0)
             //    vertice = 5 + 9 + 9 * (int)Math.Pow(5, size - 1);
             //else vertice = 5;
 
-            int faces = (int)Math.Pow(5, size+1); // Количество закрашенных полей
-            int edges = 8*(int)Math.Pow(5, size+1);
+            int faces = (int)Math.Pow(5, size + 1); // Количество закрашенных полей
+            int edges = 8 * (int)Math.Pow(5, size + 1);
 
 
             Faces face = new();
 
             string path = @"F:\vano\Учеба\Универ\Prog\Serpinski\Serpinski\Serp" + size + ".off";
+            //string path = @"C:\Users\RoGad\OneDrive\Рабочий стол\pyramid_of_Serpinsky-main\Serpinski\Serp" + size + ".off";
+
             if (!File.Exists(path))
             {
                 File.AppendAllText(path, "OFF");
@@ -65,7 +65,7 @@ namespace Serpinski
         {
             public int facesCol = 0; // Счетчик для полей
             public int verticeCol = 0; // Счетчик для вершин
-            public string[] faces = new string[10000];
+            public string[] faces = new string[1000000];
             public Faces()
             {
 
@@ -120,7 +120,7 @@ namespace Serpinski
                 //}
 
                 //face.faces[face.facesCol++] = "4 " + 
-                
+
 
                 // Ищем координаты вершин таких же 5 пирамидок внутри одной
                 pirPoz(A, middles[0], middles[2], middles[3], middles[6], size - 1, path, face);
